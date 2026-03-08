@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\toshi\\Toshi-Quake4-Modding\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\toshi\\Toshi-Quake4-Modding\\game\\weapon\\WeaponBlaster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\weapon\\WeaponBlaster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|C:\\Users\\toshi\\Toshi-Quake4-Modding\\game\\weapon\\WeaponRocketLauncher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{49BEC5C6-B964-417A-851E-808886B57430}|game.vcxproj|solutionrelative:game\\weapon\\WeaponRocketLauncher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -35,6 +39,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "WeaponBlaster.cpp",
+              "DocumentMoniker": "C:\\Users\\toshi\\Toshi-Quake4-Modding\\game\\weapon\\WeaponBlaster.cpp",
+              "RelativeDocumentMoniker": "game\\weapon\\WeaponBlaster.cpp",
+              "ToolTip": "C:\\Users\\toshi\\Toshi-Quake4-Modding\\game\\weapon\\WeaponBlaster.cpp",
+              "RelativeToolTip": "game\\weapon\\WeaponBlaster.cpp",
+              "ViewState": "AgIAAJUBAAAAuA7VlKQawK0BAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-08T03:22:48.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "WeaponRocketLauncher.cpp",
               "DocumentMoniker": "C:\\Users\\toshi\\Toshi-Quake4-Modding\\game\\weapon\\WeaponRocketLauncher.cpp",
               "RelativeDocumentMoniker": "game\\weapon\\WeaponRocketLauncher.cpp",
@@ -47,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SysCmds.cpp",
               "DocumentMoniker": "C:\\Users\\toshi\\Toshi-Quake4-Modding\\game\\gamesys\\SysCmds.cpp",
               "RelativeDocumentMoniker": "game\\gamesys\\SysCmds.cpp",
@@ -55,12 +72,11 @@
               "RelativeToolTip": "game\\gamesys\\SysCmds.cpp",
               "ViewState": "AgIAAJQAAAAAAAAAAAAmwK0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-08T03:08:17.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:08:17.47Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SaveGame.cpp",
               "DocumentMoniker": "C:\\Users\\toshi\\Toshi-Quake4-Modding\\game\\gamesys\\SaveGame.cpp",
               "RelativeDocumentMoniker": "game\\gamesys\\SaveGame.cpp",
@@ -68,12 +84,11 @@
               "RelativeToolTip": "game\\gamesys\\SaveGame.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-08T03:08:12.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:08:12.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Class.cpp",
               "DocumentMoniker": "C:\\Users\\toshi\\Toshi-Quake4-Modding\\game\\gamesys\\Class.cpp",
               "RelativeDocumentMoniker": "game\\gamesys\\Class.cpp",
@@ -81,12 +96,11 @@
               "RelativeToolTip": "game\\gamesys\\Class.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-08T03:08:00.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:08:00.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Simd.cpp",
               "DocumentMoniker": "C:\\Users\\toshi\\Toshi-Quake4-Modding\\idlib\\math\\Simd.cpp",
               "RelativeDocumentMoniker": "idlib\\math\\Simd.cpp",
@@ -94,8 +108,7 @@
               "RelativeToolTip": "idlib\\math\\Simd.cpp",
               "ViewState": "AgIAANYFAAAAAAAAAAAmwO8FAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-08T03:07:24.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T03:07:24.802Z"
             }
           ]
         }
