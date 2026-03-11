@@ -1,5 +1,3 @@
-THIS MOD IS UNFORTUNATELY NOT COMPLETE
-
 All weapons have been modified to at least a small degree to match certain weapon archetypes in Destiny:
 - blaster now has a slower fire rate, no charge mode, and fires mini rockets
 - machine gun has a slightly smaller magazine and slower fire rate
