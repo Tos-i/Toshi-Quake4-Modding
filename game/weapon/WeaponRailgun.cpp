@@ -422,16 +422,16 @@ rvWeaponRailgun::State_Fire
 */
 stateResult_t rvWeaponRailgun::State_Fire(const stateParms_t& parms) {
 	enum {
-		FIRE_INIT,
-		FIRE_WAIT,
+		STAGE_INIT,
+		STAGE_WAIT,
 	};
 	switch (parms.stage) {
-	case FIRE_INIT:
+	case STAGE_INIT:
 
 		//StopSound(SND_CHANNEL_ITEM, false);
 		//viewModel->SetShaderParm(BLASTER_SPARM_CHARGEGLOW, 0);
 		//don't fire if we're targeting a gui.
-		idPlayer* player;
+		/*idPlayer* player;
 		player = gameLocal.GetLocalPlayer();
 
 		//make sure the player isn't looking at a gui first
@@ -445,36 +445,35 @@ stateResult_t rvWeaponRailgun::State_Fire(const stateParms_t& parms) {
 			fireHeldTime = 0;
 			SetState("Idle", 4);
 			return SRESULT_DONE;
-		}
+		}*/
 
-
+		nextAttackTime = gameLocal.time + (fireRate * owner->PowerUpModifier(PMOD_FIRERATE));
 
 		if (gameLocal.time - fireHeldTime > chargeTime) {
 
 			Attack(false, 1, spread, 0, 1.0f);
-			PlayEffect("fx_chargedflash", barrelJointView, false);
-			PlayAnim(ANIMCHANNEL_ALL, "chargedfire", parms.blendFrames);
+			//PlayEffect("fx_chargedflash", barrelJointView, false);
+			PlayAnim(ANIMCHANNEL_ALL, "fire", parms.blendFrames);
 			
 
 		}
 		else {
 			Attack(false, 1, spread, 0, 0.2f);
-			PlayEffect("fx_normalflash", barrelJointView, false);
-			PlayAnim(ANIMCHANNEL_ALL, "fire", parms.blendFrames);
+			//PlayEffect("fx_normalflash", barrelJointView, false);
+			PlayAnim(ANIMCHANNEL_ALL, "chargedfire", parms.blendFrames);
 		}
 		fireHeldTime = 0;
 		
 
-		return SRESULT_STAGE(FIRE_WAIT);
+		return SRESULT_STAGE(STAGE_WAIT);
 
-	case FIRE_WAIT:
-		if (AnimDone(ANIMCHANNEL_ALL, 4)) {
-			SetState("Idle", 4);
+	case STAGE_WAIT:
+		if ((gameLocal.isMultiplayer && gameLocal.time >= nextAttackTime) ||
+			(!gameLocal.isMultiplayer && (AnimDone(ANIMCHANNEL_ALL, 2)))) {
+			SetState("Idle", 0);
 			return SRESULT_DONE;
 		}
-		if (UpdateFlashlight() || UpdateAttack()) {
-			return SRESULT_DONE;
-		}
+		
 		return SRESULT_WAIT;
 	}
 	return SRESULT_ERROR;
