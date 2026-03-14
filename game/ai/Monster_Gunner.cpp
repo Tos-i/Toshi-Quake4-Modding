@@ -20,6 +20,7 @@ public:
 	virtual void		GetDebugInfo					( debugInfoProc_t proc, void* userData );
 
 	virtual bool		Pain							( idEntity *inflictor, idEntity *attacker, int damage, const idVec3 &dir, int location );
+	
 
 protected:
 
@@ -42,6 +43,7 @@ protected:
 
 private:
 
+	
 	// Actions
 	rvAIAction			actionGrenadeAttack;
 	rvAIAction			actionNailgunAttack;
@@ -304,6 +306,7 @@ void rvMonsterGunner::GetDebugInfo ( debugInfoProc_t proc, void* userData ) {
 	proc ( "idAI", "actionSideStepLeft",		aiActionStatusString[actionSideStepLeft.status], userData );
 	proc ( "idAI", "actionSideStepRight",		aiActionStatusString[actionSideStepRight.status], userData );
 }
+
 
 bool rvMonsterGunner::Pain( idEntity *inflictor, idEntity *attacker, int damage, const idVec3 &dir, int location ) {
 	actionTimerRangedAttack.Clear( actionTime );
